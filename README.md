@@ -12,6 +12,10 @@ We collect 900 clip arts and 900 pixel arts for trianing our method. The folders
 ## Testing
 * Download pre-trained model [here](https://drive.google.com/open?id=1HL0F6cURjWhY2qnt03YdshDH0JD01f5T).
 * extract the `pre-trained_model.zip` into a newly created folder called `checkpoints_pixelization`.
-* Create the folders `testA` and `testB` in `samples` which contain the clip arts are going to be pixelized and pixel arts are going to depixelized respectively.
+* Create the folders `testA` and `testB` in the folder `samples`. Note that `testA` and `testB` contain the clip arts to be pixelized and pixel arts to be depixelized respectively.
+
 Then, run
+
 `$ bash test`
+
+All testing results will be shown in the folder `results_pixelization`.
