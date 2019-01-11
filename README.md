@@ -1,5 +1,5 @@
 # Deep-Unsupervised-Pixelization
-Paper [Deep Unsupervised Pixelization](http://www.shengfenghe.com/uploads/1/5/1/3/15132160/sa2018_pixelization.pdf)
+Code for Paper [Deep Unsupervised Pixelization](http://www.shengfenghe.com/uploads/1/5/1/3/15132160/sa2018_pixelization.pdf)  
 ACM Transactions on Graphics (SIGGRAPH Asia 2018 issue), 2018
 ## Requirement
 - Python 3.5
