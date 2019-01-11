@@ -1,5 +1,5 @@
 # Deep-Unsupervised-Pixelization
-ACM Transactions on Graphics (SIGGRAPH Asia 2018 issue), 2018
+[CM Transactions on Graphics (SIGGRAPH Asia 2018 issue), 2018](http://www.shengfenghe.com/uploads/1/5/1/3/15132160/sa2018_pixelization.pdf)
 ## Requirement
 - Python 3.5
 - PIL
