@@ -12,6 +12,17 @@ ACM Transactions on Graphics (SIGGRAPH Asia 2018 issue), 2018
 ## Dataset
 ### Training Dataset
 We collect 900 clip arts and 900 pixel arts for trianing our method. The folders named `trainA` and `trainB` contain the clip arts and pixel arts respectively [here](https://drive.google.com/open?id=1qDXB5g0Cb0VwISXwnfeiehPHuTgxWhdG).
+### Testing Dataset
+Create the folders `testA` and `testB` in the folder `samples`. Note that `testA` and `testB` contain the clip arts to be pixelized and pixel arts to be depixelized respectively.
+## Training
+* To train a model:
+``` bash
+python3 ./train.py --dataroot ./samples --resize_or_crop crop --gpu_ids 0
+```
+or you can directly:
+``` bash 
+$ bash ./train.sh'
+```
 ## Testing
 * Download pre-trained model [here](https://drive.google.com/open?id=1HL0F6cURjWhY2qnt03YdshDH0JD01f5T).
 * extract the `pre-trained_model.zip` into a newly created folder called `checkpoints_pixelization`.
