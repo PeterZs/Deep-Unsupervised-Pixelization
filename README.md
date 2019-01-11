@@ -18,18 +18,22 @@ Create the folders `testA` and `testB` in the folder `samples`. Note that `testA
 * To train a model:
 ``` bash
 python3 ./train.py --dataroot ./samples --resize_or_crop crop --gpu_ids 0
-```
+```  
 or you can directly:
 ``` bash 
 $ bash ./train.sh'
-```
+```  
+You can check the losses of models in the `./checkpoints_pixelization/loss_log.txt`.  
+More training flags in the `./options/base_options.py` and `./options/train_options.py`.
 ## Testing
-* Download pre-trained model [here](https://drive.google.com/open?id=1HL0F6cURjWhY2qnt03YdshDH0JD01f5T).
-* extract the `pre-trained_model.zip` into a newly created folder called `checkpoints_pixelization`.
-* Create the folders `testA` and `testB` in the folder `samples`. Note that `testA` and `testB` contain the clip arts to be pixelized and pixel arts to be depixelized respectively.
-
-Then, run
-
-`$ bash test`
-
+* After training, all models have been saved in the directory `./checkpoints_pixelization/`.
+* To test a model:
+``` bash
+python3 ./test.py --dataroot ./samples --no_dropout --resize_or_crop crop --gpu_ids 0 --how_many 1 --which_epoch 200
+```  
+or you can directly:
+``` bash 
+$ bash ./test.sh'
+```  
+More testing flags in the `./options/base_options.py`.  
 All testing results will be shown in the folder `results_pixelization`.
