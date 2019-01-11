@@ -22,7 +22,7 @@ python3 ./train.py --dataroot ./samples --resize_or_crop crop --gpu_ids 0
 ```  
 or you can directly:
 ``` bash 
-$ bash ./train.sh'
+$ bash ./train.sh
 ```  
 You can check the losses of models in the file `./checkpoints_pixelization/loss_log.txt`.  
 More training flags in the files `./options/base_options.py` and `./options/train_options.py`.
@@ -34,7 +34,7 @@ python3 ./test.py --dataroot ./samples --no_dropout --resize_or_crop crop --gpu_
 ```  
 or you can directly:
 ``` bash 
-$ bash ./test.sh'
+$ bash ./test.sh
 ```  
 More testing flags in the file `./options/base_options.py`.  
 All testing results will be shown in the directory `./results_pixelization/`.
