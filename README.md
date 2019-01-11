@@ -14,7 +14,7 @@ ACM Transactions on Graphics (SIGGRAPH Asia 2018 issue), 2018.
 ### Training Dataset
 We collect 900 clip arts and 900 pixel arts for trianing our method. The folders named `trainA` and `trainB` contain the clip arts and pixel arts respectively [here](https://drive.google.com/open?id=1qDXB5g0Cb0VwISXwnfeiehPHuTgxWhdG).
 ### Testing Dataset
-Create the folders `testA` and `testB` in the folder `samples`. Note that `testA` and `testB` contain the clip arts to be pixelized and pixel arts to be depixelized respectively.
+Create the folders `testA` and `testB` in the directory `./samples/`. Note that `testA` and `testB` contain the clip arts to be pixelized and pixel arts to be depixelized respectively.
 ## Training
 * To train a model:
 ``` bash
@@ -24,8 +24,8 @@ or you can directly:
 ``` bash 
 $ bash ./train.sh'
 ```  
-You can check the losses of models in the `./checkpoints_pixelization/loss_log.txt`.  
-More training flags in the `./options/base_options.py` and `./options/train_options.py`.
+You can check the losses of models in the file `./checkpoints_pixelization/loss_log.txt`.  
+More training flags in the files `./options/base_options.py` and `./options/train_options.py`.
 ## Testing
 * After training, all models have been saved in the directory `./checkpoints_pixelization/`.
 * To test a model:
@@ -36,5 +36,5 @@ or you can directly:
 ``` bash 
 $ bash ./test.sh'
 ```  
-More testing flags in the `./options/base_options.py`.  
-All testing results will be shown in the folder `results_pixelization`.
+More testing flags in the file `./options/base_options.py`.  
+All testing results will be shown in the directory `./results_pixelization/`.
